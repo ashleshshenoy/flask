@@ -1,0 +1,12 @@
+{%extends 'firstpage.html'%}
+{%block title %}userpage{%endblock%}
+
+{%block con%}
+{%with messages =get_flashed_messages()%} {%if messages%} {%for m in messages%} <p><small><i>{{m}}</i> </small></p> {%endfor%} {%endif%} {%endwith%}
+<h1>{{content}}</h1>
+
+	<script>alert("logged in succesfull")</script>
+	
+<form action='login'><p><input type="submit" value="back" ></p></form>
+
+{%endblock%}

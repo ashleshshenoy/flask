@@ -1,0 +1,33 @@
+{% extends "firstpage.html"%}	
+{%block title%} login {%endblock%}
+{%block con%}
+<br><br>
+<form style="justify-content: center; text-align: left; margin-left: 20px" action="#" method="post" enctype="multipart/form-data">
+
+<p style="font-style: italic;  color:black"><small>Note: It is mandatory to fill all the details for succcessful submition.</small></p>
+
+	<P><label for="name">Name&emsp;&emsp;&emsp;&ensp;</label>
+	<input type="text" name="name" id='name'style="width: 60%" required="required"></P>
+	<br>
+
+
+	<P><label for="age">Age&emsp;&emsp;&emsp;&emsp;&ensp;</label>
+	<input type="number" name="age" id="age"style="width: 60%" required="required"></P>
+	<br>
+
+
+	<P><label for="email">mail address&emsp;</label>
+	<input type="email" name="email" id="email" style="width: 60%" required="required"></P>
+	<br>
+
+
+	<P><label for="image">Photo&ensp;</label>
+	<input type="file" name="file" id="image" 
+	style="width: 60%" required="required"></P>
+	<br>
+
+	<input type="submit" value="submit" >
+
+</form>
+
+{%endblock%}
